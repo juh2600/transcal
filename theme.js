@@ -70,8 +70,11 @@ const applyTheme = (theme) => {
     if (!themes[theme]) theme = 'unimplemented';
     body.classList.add(`theme-${theme}`);
 };
-
-document.addEventListener('DOMContentLoaded', (evt) => {
+const doThemes = () => {
     populateThemes();
     applyTheme('unimplemented');
+};
+
+document.addEventListener('DOMContentLoaded', (evt) => {
+    doThemes();
 });

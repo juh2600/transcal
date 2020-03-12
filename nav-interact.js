@@ -11,8 +11,12 @@ const toggle_classes = (element, class1, class2) => {
     }
 }
 
-document.addEventListener('DOMContentLoaded', (evt) => {
+const doNavInteract = () => {
     nav = document.getElementById('main-nav');
     nav_toggle = document.getElementById('nav-btn-ctr');
     nav_toggle.addEventListener('click', (evt) => {toggle_classes(nav, 'open', 'closed');});
+};
+
+document.addEventListener('DOMContentLoaded', (evt) => {
+    doNavInteract();
 });
