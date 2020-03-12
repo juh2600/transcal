@@ -1,0 +1,41 @@
+:root {
+    --bg: #eeeeeeff;
+    --fg: #202020ff;
+    --muted: #999999ff;
+    --highlight: #aaaaaaff;
+    --standout: #777777ff;
+}
+
+html {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a.plain {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.stealth {
+    cursor: default;
+}
+
+li.plain {
+    list-style-type: none;
+}
+
+ol.plain, ul.plain {
+    padding: 0;
+    margin: 0;
+}
