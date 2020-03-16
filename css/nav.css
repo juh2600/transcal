@@ -24,19 +24,28 @@ nav#main-nav > #nav-open-close {
     box-sizing: border-box;
     position: fixed;
     left: 0;
+    top: 0;
     border-bottom-width: 1px;
     border-bottom-style: solid;
 }
 
+/* Overall clickable hamborgar butan dims:
+ * width: 3.9em;  // equal to left of header#page-title
+ * height: 4.5em;
+ */
 nav#main-nav > #nav-open-close > #nav-btn-ctr {
     position: fixed;
-    top: 1em;
+    top: 0;
     left: 0;
     /* width: 5em; */
-    padding: 1em;
+    padding: 1.5875em 1em; /* height should total 4.5em to match nav#main-nav > #nav-open-close height */
     box-sizing: border-box;
 }
 
+/* Hamborgar dims:
+ * width:  1.9em;
+ * height: 1.325em;
+ */
 nav#main-nav > #nav-open-close > #nav-btn-ctr > .nav-btn-bar {
     width: 1.5em;
     height: 0.175em;

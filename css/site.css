@@ -42,15 +42,19 @@ ol.plain, ul.plain {
 }
 
 main {
-    padding: 0;
+    padding: 4.5em 0 0 0;
 }
 
 header#page-title {
-    padding: 1.5em 0em 1em 4em;
+    padding: 1.5em 0 1em 0;
     /* height should equal nav#main-nav > #nav-open-close */
     height: 4.5em;
     box-sizing: border-box;
     white-space: nowrap;
+    position: fixed;
+    top: 0;
+    left: 3.9em; /* equal to width of clickable hamborgar butan */
+    right: 0;
 }
 
 h1 {
@@ -58,10 +62,11 @@ h1 {
 }
 
 header#page-title > h1 {
-    position: fixed;
     font-weight: normal;
     font-size: 1.5em;
-    padding-top: 0.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 input.hidden {
@@ -70,10 +75,6 @@ input.hidden {
 
 @media all and (min-width: 26em) {
     main {
-        padding: 1.5em 2em 2em 5em;
-    }
-
-    header#page-title {
-        padding: 0 0 2em 0;
+        padding: 5.5em 2em 2em 5em;
     }
 }
