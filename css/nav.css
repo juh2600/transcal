@@ -54,7 +54,7 @@ nav#main-nav.open > #nav-open-close > #nav-btn-ctr > .nav-btn-bar.top {
     transform: translateY(0.35em) rotate(45deg);
 }
 nav#main-nav.open > #nav-open-close > #nav-btn-ctr > .nav-btn-bar.mid {
-    transform: rotate(45deg);
+    background-color: transparent !important;
 }
 nav#main-nav.open > #nav-open-close > #nav-btn-ctr > .nav-btn-bar.bot {
     transform: translateY(-0.35em) rotate(-45deg);
