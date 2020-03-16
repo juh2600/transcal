@@ -2,7 +2,7 @@ const themes = {
     "light": {
         "bg": "#eeeeeeff",
         "fg": "#202020ff",
-        "offset": "#999999ff",
+        "offset": "#bbbbbbff",
         "highlight": "#aaaaaaff",
         "standout": "#777777ff",
         "off-bg": "#ddddddff",
