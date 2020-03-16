@@ -20,7 +20,7 @@ const main_nav_content = `
         <li class="plain"><a class="plain" href="#">Timeline</a></li>
         <li class="plain"><a class="plain" href="#">Account</a></li>
         <li class="plain"><a class="plain" href="/new-page-template.html">Template</a></li>
-        <li class="plain"><a class="plain" href="/theme-selection.html">Theme selection</a></li>
+        <li class="plain"><a class="plain" href="/testing-utils.html">Theme selection</a></li>
     </ul>
     <div id="nav-click-catcher"></div>
 `;
