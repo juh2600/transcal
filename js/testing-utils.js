@@ -7,7 +7,8 @@ const doTestingUtils = () => {
     }
 
     document.getElementById('cache-clearer').addEventListener('click', (evt) => {
-        window.location.reload(true);
+        // window.location.reload(true);
+        window.location.href = window.location.href
     });
 }
 

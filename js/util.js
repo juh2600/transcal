@@ -9,7 +9,7 @@ const getCookie = () => {
         output[pair[0]] = pair[1];
     });
     return output;
-}
+};
 
 const toggle_classes = (element, class1, class2) => {
     if (element.classList.contains(class1)) {
