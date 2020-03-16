@@ -46,8 +46,11 @@ main {
 }
 
 header#page-title {
-    padding: 1.5em 0em 0.5em 4em;
-    height: 2em;
+    padding: 1.5em 0em 1em 4em;
+    /* height should equal nav#main-nav > #nav-open-close */
+    height: 4.5em;
+    box-sizing: border-box;
+    white-space: nowrap;
 }
 
 h1 {
@@ -56,6 +59,9 @@ h1 {
 
 header#page-title > h1 {
     position: fixed;
+    font-weight: normal;
+    font-size: 1.5em;
+    padding-top: 0.2em;
 }
 
 input.hidden {
