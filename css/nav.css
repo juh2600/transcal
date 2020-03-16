@@ -1,0 +1,84 @@
+nav#main-nav {
+    box-sizing: border-box;
+    /* position: absolute; */
+    position: fixed;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    transition-property: left;
+    transition-duration: 0.35s;
+    user-select: none;
+}
+
+nav#main-nav.closed {
+    left: -100%;
+}
+
+nav#main-nav.open {
+    left: 0;
+}
+
+nav#main-nav > #nav-open-close {
+    height: 4.5em;
+    box-sizing: border-box;
+}
+
+nav#main-nav > #nav-open-close > #nav-btn-ctr {
+    position: fixed;
+    top: 1em;
+    left: 0;
+    /* width: 5em; */
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+nav#main-nav > #nav-open-close > #nav-btn-ctr > .nav-btn-bar {
+    width: 1.5em;
+    height: 0.175em;
+    margin: 0.2em;
+    transition-property: background-color, transform;
+    transition-duration: 0.35s;
+    border-radius: 0.0875em;
+}
+
+nav#main-nav.open > #nav-open-close > #nav-btn-ctr > .nav-btn-bar {
+    height: 0.15em;
+}
+
+nav#main-nav.open > #nav-open-close > #nav-btn-ctr > .nav-btn-bar.top {
+    transform: translateY(0.35em) rotate(45deg);
+}
+nav#main-nav.open > #nav-open-close > #nav-btn-ctr > .nav-btn-bar.mid {
+    transform: rotate(45deg);
+}
+nav#main-nav.open > #nav-open-close > #nav-btn-ctr > .nav-btn-bar.bot {
+    transform: translateY(-0.35em) rotate(-45deg);
+}
+
+nav#main-nav > ul {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav#main-nav > ul > li {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav#main-nav > ul > li > a {
+    width: 100%;
+    padding: 0.75em;
+    text-align: right;
+    box-sizing: border-box;
+    display: block;
+}
+
+nav#main-nav > ul > li > a:hover {
+}
+
+@media all and (min-width: 20em) {
+    nav#main-nav {
+        max-width: 20em;
+    }
+}

@@ -1,0 +1,44 @@
+.situation-tile {
+    display: block;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    margin: 0.5em;
+}
+
+.situation-title {
+    font-weight: bold;
+    padding: 0.75em 0;
+}
+
+#dashboard-ctr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dashboard-col-ctr {
+    min-width: 20em;
+    flex: 1;
+}
+
+.dashboard-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.situation-tile > input[type="checkbox"]:not(:checked) + label + .task-list {
+    display: none;
+}
+
+.situation-tile .task-list {
+    margin: 0 0 0.75em 0;
+}
+
+.task > label {
+    display: flex;
+    padding: 0.25em 0;
+}
+
+.task-title {
+    padding-left: 0.5em;
+}

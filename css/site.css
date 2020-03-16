@@ -36,6 +36,38 @@ li.plain {
 }
 
 ol.plain, ul.plain {
+    list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+main {
+    padding: 0;
+}
+
+header#page-title {
+    padding: 1.5em 0em 0.5em 4em;
+    height: 2em;
+}
+
+h1 {
+    margin: 0;
+}
+
+header#page-title > h1 {
+    /* position: fixed; */
+}
+
+input.hidden {
+    display: none;
+}
+
+@media all and (min-width: 26em) {
+    main {
+        padding: 1.5em 2em 2em 5em;
+    }
+
+    header#page-title {
+        padding: 0 0 2em 0;
+    }
 }
