@@ -19,4 +19,11 @@ const toggle_classes = (element, class1, class2) => {
         element.classList.remove(class2);
         element.classList.add(class1);
     }
-}
+};
+
+const touchesAreEqual = (t1, t2, epsilon = 5) => {
+    if(Math.abs(t2.clientX - t1.clientX) <= epsilon &&
+       Math.abs(t2.clientY - t1.clientY) <= epsilon)
+       return true;
+    return false;
+};
