@@ -16,13 +16,16 @@ const closeNav = () => {
 }
 
 const doNavInteract = () => {
-        nav = document.getElementById('main-nav');
-        nav_toggle_btn = document.getElementById('nav-btn-ctr');
-        nav_toggle_btn.addEventListener('click', toggleNav);
-        // if nav is open and we tap somewhere outside of it, close it
-        document.addEventListener('click', (evt) => {
-            if (evt.target.closest('nav#main-nav') == null) closeNav();
-        });
+    nav = document.getElementById('main-nav');
+    nav_toggle_btn = document.getElementById('nav-btn-ctr');
+    nav_toggle_btn.addEventListener('click', toggleNav);
+    // if nav is open and we tap somewhere outside of it, close it
+    document.addEventListener('click', (evt) => {
+        if (evt.target.closest('nav#main-nav') == null || evt.target.closest('#nav-click-catcher')) closeNav();
+    });
+    document.addEventListener('keyup', (evt) => {
+        if(evt.key === 'Escape') closeNav();
+    });
 };
 
 document.addEventListener('DOMContentLoaded', doNavInteract);
