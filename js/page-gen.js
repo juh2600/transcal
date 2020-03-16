@@ -19,6 +19,7 @@ const main_nav_content = `
         <li class="plain"><a class="plain" href="/dashboard.html">Dashboard</a></li>
         <li class="plain"><a class="plain" href="#">Timeline</a></li>
         <li class="plain"><a class="plain" href="#">Account</a></li>
+        <li class="plain"><a class="plain" href="/wiki.html">Wiki: University of Nowhere</a></li>
         <li class="plain"><a class="plain" href="/new-page-template.html">Template</a></li>
         <li class="plain"><a class="plain" href="/testing-utils.html">Testing utilities</a></li>
     </ul>
