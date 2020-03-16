@@ -55,7 +55,7 @@ h1 {
 }
 
 header#page-title > h1 {
-    /* position: fixed; */
+    position: fixed;
 }
 
 input.hidden {

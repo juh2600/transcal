@@ -64,6 +64,10 @@ const populateThemes = () => {
             ${b} nav#main-nav {
                 background-color: ${t['offset']};
             }
+            ${b} nav#main-nav > #nav-open-close {
+                background-color: ${t['bg']};
+                border-bottom-color: ${t['offset']};
+            }
             ${b} nav#main-nav.open > #nav-open-close > #nav-btn-ctr > .nav-btn-bar {
                 background-color: ${t['fg']};
             }
