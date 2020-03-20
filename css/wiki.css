@@ -1,0 +1,4 @@
+#toc > ol > li > a {
+    display: block;
+    line-height: 1.5em;
+}
