@@ -2,3 +2,24 @@
     display: block;
     line-height: 1.5em;
 }
+
+h2 {
+    margin: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    position: relative;
+}
+
+main {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 4.5rem;
+    bottom: 0;
+    padding-top: 1.5rem;
+}
