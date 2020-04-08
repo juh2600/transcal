@@ -4,7 +4,7 @@ const dashboard = (req, res) => {
 	res.render('dashboard', {
 		title: 'Dashboard',
 		link: `/dashboard`,
-		navbar: nav
+		navlist: nav
 	});
 };
 
@@ -12,7 +12,7 @@ const wiki = (req, res) => {
 	res.render('wiki', {
 		title: 'req.params.name',
 		link: `/wiki/${req.params.name}`,
-		navbar: nav
+		navlist: nav
 	});
 };
 
@@ -20,7 +20,7 @@ const settings = (req, res) => {
 	res.render('settings', {
 		title: 'Settings',
 		link: `/settings`,
-		navbar: nav
+		navlist: nav
 	});
 };
 

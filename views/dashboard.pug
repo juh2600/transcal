@@ -1,110 +1,94 @@
-<!DOCTYPE html>
-<html lang="en" id="dashboard">
+extends layout-with-nav
 
-<head>
-    <title>Dashboard</title>
-    <script src="js/util.js"></script>
-    <script src="js/page-gen.js"></script>
-    <script src="js/nav-interact.js"></script>
-    <script src="js/theme.js"></script>
-    <link href="css/dashboard.css" rel="stylesheet" type="text/css" />
-</head>
+append links
+    link(href="css/dashboard.css", rel="stylesheet", type="text/css")
 
-<body>
-    <nav id="main-nav" class="closed"></nav>
-    <main>
-        <header id="page-title">
-            <h1>Dashboard</h1>
-        </header>
-        <ul class="plain" id="dashboard-ctr">
-            <li class="plain dashboard-col-ctr">
-                <ul class="plain dashboard-col">
-                    <li class="situation-tile">
-                        <input id="University-of-Nowhere-0-0" class="hidden" name="University-of-Nowhere" checked type="checkbox" />
-                        <label for="University-of-Nowhere-0-0">
-                            <div class="situation-title">University of Nowhere</div>
-                        </label>
-                        <ul class="plain task-list">
-                            <li class="task">
-                                <input id="University-of-Nowhere-0-0-student-id" class="hidden" name="University-of-Nowhere-student-id" type="checkbox" />
-                                <label for="University-of-Nowhere-0-0-student-id">
-                                    <div class="fake-checkbox"></div><div class="task-title">Student ID</div>
-                                </label>
-                            </li>
-                            <li class="task">
-                                <input id="University-of-Nowhere-0-0-email" class="hidden" name="University-of-Nowhere-email" type="checkbox" />
-                                <label for="University-of-Nowhere-0-0-email">
-                                    <div class="fake-checkbox"></div><div class="task-title">Email</div>
-                                </label>
-                            </li>
-                            <li class="task">
-                                <input id="University-of-Nowhere-0-0-the-system" class="hidden" name="University-of-Nowhere-the-system" type="checkbox" />
-                                <label for="University-of-Nowhere-0-0-the-system">
-                                    <div class="fake-checkbox"></div><div class="task-title">The System</div>
-                                </label>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="situation-tile">
-                        <input id="University-of-Nowhere-0-1" class="hidden" name="University-of-Nowhere" type="checkbox" />
-                        <label for="University-of-Nowhere-0-1">
-                            <div class="situation-title">University of Nowhere</div>
-                        </label>
-                    </li>
-                    <li class="situation-tile">
-                        <input id="University-of-Nowhere-0-2" class="hidden" name="University-of-Nowhere" type="checkbox" />
-                        <label for="University-of-Nowhere-0-2">
-                            <div class="situation-title">University of Nowhere</div>
-                        </label>
-                    </li>
-                </ul>
-            </li>
-            <li class="plain dashboard-col-ctr">
-                <ul class="plain dashboard-col">
-                    <li class="situation-tile">
-                        <input id="University-of-Nowhere-1-0" class="hidden" name="University-of-Nowhere" type="checkbox" />
-                        <label for="University-of-Nowhere-1-0">
-                            <div class="situation-title">University of Nowhere</div>
-                        </label>
-                    </li>
-                    <li class="situation-tile">
-                        <input id="University-of-Nowhere-1-1" class="hidden" name="University-of-Nowhere" type="checkbox" />
-                        <label for="University-of-Nowhere-1-1">
-                            <div class="situation-title">University of Nowhere</div>
-                        </label>
-                    </li>
-                    <li class="situation-tile">
-                        <input id="University-of-Nowhere-1-2" class="hidden" name="University-of-Nowhere" type="checkbox" />
-                        <label for="University-of-Nowhere-1-2">
-                            <div class="situation-title">University of Nowhere</div>
-                        </label>
-                    </li>
-                </ul>
-            </li>
-            <li class="plain dashboard-col-ctr">
-                <ul class="plain dashboard-col">
-                    <li class="situation-tile">
-                        <input id="University-of-Nowhere-2-0" class="hidden" name="University-of-Nowhere" type="checkbox" />
-                        <label for="University-of-Nowhere-2-0">
-                            <div class="situation-title">University of Nowhere</div>
-                        </label>
-                    </li>
-                    <li class="situation-tile">
-                        <input id="University-of-Nowhere-2-1" class="hidden" name="University-of-Nowhere" type="checkbox" />
-                        <label for="University-of-Nowhere-2-1">
-                            <div class="situation-title">University of Nowhere</div>
-                        </label>
-                    </li>
-                    <li class="situation-tile">
-                        <input id="University-of-Nowhere-2-2" class="hidden" name="University-of-Nowhere" type="checkbox" />
-                        <label for="University-of-Nowhere-2-2">
-                            <div class="situation-title">University of Nowhere</div>
-                        </label>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </main>
-</body>
-
-</html>
+block content
+    <ul class="plain" id="dashboard-ctr">
+        <li class="plain dashboard-col-ctr">
+            <ul class="plain dashboard-col">
+                <li class="situation-tile">
+                    <input id="University-of-Nowhere-0-0" class="hidden" name="University-of-Nowhere" checked type="checkbox" />
+                    <label for="University-of-Nowhere-0-0">
+                        <div class="situation-title">University of Nowhere</div>
+                    </label>
+                    <ul class="plain task-list">
+                        <li class="task">
+                            <input id="University-of-Nowhere-0-0-student-id" class="hidden" name="University-of-Nowhere-student-id" type="checkbox" />
+                            <label for="University-of-Nowhere-0-0-student-id">
+                                <div class="fake-checkbox"></div><div class="task-title">Student ID</div>
+                            </label>
+                        </li>
+                        <li class="task">
+                            <input id="University-of-Nowhere-0-0-email" class="hidden" name="University-of-Nowhere-email" type="checkbox" />
+                            <label for="University-of-Nowhere-0-0-email">
+                                <div class="fake-checkbox"></div><div class="task-title">Email</div>
+                            </label>
+                        </li>
+                        <li class="task">
+                            <input id="University-of-Nowhere-0-0-the-system" class="hidden" name="University-of-Nowhere-the-system" type="checkbox" />
+                            <label for="University-of-Nowhere-0-0-the-system">
+                                <div class="fake-checkbox"></div><div class="task-title">The System</div>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="situation-tile">
+                    <input id="University-of-Nowhere-0-1" class="hidden" name="University-of-Nowhere" type="checkbox" />
+                    <label for="University-of-Nowhere-0-1">
+                        <div class="situation-title">University of Nowhere</div>
+                    </label>
+                </li>
+                <li class="situation-tile">
+                    <input id="University-of-Nowhere-0-2" class="hidden" name="University-of-Nowhere" type="checkbox" />
+                    <label for="University-of-Nowhere-0-2">
+                        <div class="situation-title">University of Nowhere</div>
+                    </label>
+                </li>
+            </ul>
+        </li>
+        <li class="plain dashboard-col-ctr">
+            <ul class="plain dashboard-col">
+                <li class="situation-tile">
+                    <input id="University-of-Nowhere-1-0" class="hidden" name="University-of-Nowhere" type="checkbox" />
+                    <label for="University-of-Nowhere-1-0">
+                        <div class="situation-title">University of Nowhere</div>
+                    </label>
+                </li>
+                <li class="situation-tile">
+                    <input id="University-of-Nowhere-1-1" class="hidden" name="University-of-Nowhere" type="checkbox" />
+                    <label for="University-of-Nowhere-1-1">
+                        <div class="situation-title">University of Nowhere</div>
+                    </label>
+                </li>
+                <li class="situation-tile">
+                    <input id="University-of-Nowhere-1-2" class="hidden" name="University-of-Nowhere" type="checkbox" />
+                    <label for="University-of-Nowhere-1-2">
+                        <div class="situation-title">University of Nowhere</div>
+                    </label>
+                </li>
+            </ul>
+        </li>
+        <li class="plain dashboard-col-ctr">
+            <ul class="plain dashboard-col">
+                <li class="situation-tile">
+                    <input id="University-of-Nowhere-2-0" class="hidden" name="University-of-Nowhere" type="checkbox" />
+                    <label for="University-of-Nowhere-2-0">
+                        <div class="situation-title">University of Nowhere</div>
+                    </label>
+                </li>
+                <li class="situation-tile">
+                    <input id="University-of-Nowhere-2-1" class="hidden" name="University-of-Nowhere" type="checkbox" />
+                    <label for="University-of-Nowhere-2-1">
+                        <div class="situation-title">University of Nowhere</div>
+                    </label>
+                </li>
+                <li class="situation-tile">
+                    <input id="University-of-Nowhere-2-2" class="hidden" name="University-of-Nowhere" type="checkbox" />
+                    <label for="University-of-Nowhere-2-2">
+                        <div class="situation-title">University of Nowhere</div>
+                    </label>
+                </li>
+            </ul>
+        </li>
+    </ul>
