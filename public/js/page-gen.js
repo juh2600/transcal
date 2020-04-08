@@ -21,11 +21,11 @@ const main_nav_content = `
         </div>
     </div>
     <ul class="plain">
-        <li class="plain"><a class="plain" href="/dashboard.html">Dashboard</a></li>
+        <li class="plain"><a class="plain" href="/dashboard">Dashboard</a></li>
         <li class="plain"><a class="plain" href="#">Timeline</a></li>
         <li class="plain"><a class="plain" href="#">Account</a></li>
         <li class="plain"><a class="plain" href="/new-page-template.html">Template</a></li>
-        <li class="plain"><a class="plain" href="/testing-utils.html">Testing utilities</a></li>
+        <li class="plain"><a class="plain" href="/settings">Testing utilities</a></li>
     </ul>
     <div id="nav-click-catcher"></div>
 `;

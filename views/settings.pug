@@ -1,0 +1,13 @@
+extends layout-with-nav.pug
+
+append links
+    link(href="/css/testing-utils.css", rel="stylesheet", type="text/css")
+
+append scripts
+    script(src="/js/testing-utils.js")
+
+block content
+    each themeName in ["light", "dark", "green", "unimplemented"]
+        div(data-theme=themeName, class="theme-selector butan") #{themeName}
+    hr
+    div(id="cache-clearer", class="butan") Clear cache
