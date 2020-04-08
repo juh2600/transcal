@@ -1,0 +1,37 @@
+{
+    "name": "University of Nowhere",
+    "url_name": "University_of_Nowhere",
+    "sections": [
+        {
+            "title": "Student ID",
+            "slug": "Student_ID",
+            "sections": [
+                {
+                    "title": "Taking the photo",
+                    "slug": "Taking_the_photo",
+                    "sections": [],
+                    "content": "Unfortunately, you'll have to go out in public for this part, unless this school lets you submit a new photo online."
+                },
+                {
+                    "title": "Waiting for delivery",
+                    "slug": "Waiting_for_delivery",
+                    "sections": [],
+                    "content": "This is the easy part. Just wait at home until it gets there."
+                }
+            ],
+            "content": "You'll need to get a new Student ID."
+        },
+        {
+            "title": "Email",
+            "slug": "Email",
+            "sections": [],
+            "content": "You'll need to get a new email address."
+        },
+        {
+            "title": "The System",
+            "slug": "The_System",
+            "sections": [],
+            "content": "You'll need to get changed in The System."
+        }
+    ]
+}
