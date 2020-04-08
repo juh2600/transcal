@@ -1,25 +1,61 @@
-#toc > ol > li > a {
+/* Table of Contents */
+
+#toc {
+    padding: 0.5em;
+}
+
+#toc > ol {
+}
+
+#toc ol {
+    counter-reset: item;
+    padding-left: 2em;
+}
+
+#toc li {
     display: block;
+}
+
+#toc li a:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+}
+
+#toc li a {
+    line-height: 2em;
+}
+
+
+
+h2, h3, h4, h5, h6 {
+    margin: 0 0.5em;
+    padding: 0.5rem 0 0.4rem;
+    border-bottom: 1px solid;
+}
+
+p {
+    margin: 0;
+    padding: 0.3rem 1em;
     line-height: 1.5em;
 }
 
-h2 {
-    margin: 0;
-}
+@media all and (min-width: 26em) {
+    #toc {
+        display: flex;
+    }
 
-html {
-    height: 100vh;
-}
+    #toc > ol {
+        border: 1px solid;
+        padding: 1em 2em;
+        min-width: 15em;
+    }
 
-body {
-    position: relative;
-}
+    h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0.5rem 0.5em 0.4rem;
+    }
 
-main {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 4.5rem;
-    bottom: 0;
-    padding-top: 1.5rem;
+    p {
+        padding: 0.4rem 0;
+    }
 }

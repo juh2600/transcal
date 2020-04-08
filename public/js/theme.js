@@ -92,6 +92,9 @@ const populateThemes = () => {
             ${b} .butan {
                 background-color: ${t['off-bg']};
             }
+            ${b} #toc > ol {
+                background-color: ${t['off-bg']};
+            }
         `;
         rules.innerHTML += themeStyles;
     }
