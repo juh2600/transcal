@@ -9,9 +9,12 @@ const dashboard = (req, res) => {
 };
 
 const wiki = (req, res) => {
+	// FIXME sample data
+	const page_content = require('./UoN.json');
 	res.render('wiki', {
-		title: 'req.params.name',
+		title: page_content.name,
 		link: `/wiki/${req.params.name}`,
+		wiki_content: page_content,
 		navlist: nav
 	});
 };
