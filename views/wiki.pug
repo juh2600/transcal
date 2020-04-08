@@ -1,0 +1,27 @@
+extends layout-with-nav.pug
+
+mixin recurseSectionsToC(section)
+    if section.sections.length !== 0
+        ol
+            each subsection in section.sections
+                li
+                    a(class="plain", href="#"+subsection.slug) #{subsection.title}
+                    +recurseSectionsToC(subsection)
+
+mixin recurseSectionsContent(section, headingLevel=2)
+    - var hL = 'h' + headingLevel
+    #{hL}(id=section.slug) #{section.title}
+    p #{section.content}
+    if section.sections.length !== 0
+        each subsection in section.sections
+            +recurseSectionsContent(subsection, headingLevel+1)
+
+append links
+    link(href="/css/wiki.css", rel="stylesheet", type="text/css")
+
+block content
+    article
+        div(id="toc")
+            +recurseSectionsToC(wiki_content)
+        each section in wiki_content.sections
+            +recurseSectionsContent(section)

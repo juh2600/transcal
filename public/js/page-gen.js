@@ -5,6 +5,11 @@ const head_content = `
     <link href="css/site.css" rel="stylesheet" type="text/css" />
     <link href="css/elements.css" rel="stylesheet" type="text/css" />
     <link href="css/nav.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fullscreen and web app things -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link href="/manifest.json" rel="manifest" />
 `;
 
 const main_nav_content = `
@@ -19,6 +24,7 @@ const main_nav_content = `
         <li class="plain"><a class="plain" href="/dashboard">Dashboard</a></li>
         <li class="plain"><a class="plain" href="#">Timeline</a></li>
         <li class="plain"><a class="plain" href="#">Account</a></li>
+        <li class="plain"><a class="plain" href="/wiki.html">Wiki: University of Nowhere</a></li>
         <li class="plain"><a class="plain" href="/new-page-template.html">Template</a></li>
         <li class="plain"><a class="plain" href="/settings">Testing utilities</a></li>
     </ul>
