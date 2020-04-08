@@ -1,0 +1,16 @@
+{
+  "name": "transcal",
+  "version": "0.0.0",
+  "description": "System for tracking tasks involved in transitioning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Reed",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
+}

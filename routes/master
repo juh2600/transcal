@@ -1,0 +1,31 @@
+const nav = require('./nav.json');
+
+const dashboard = (req, res) => {
+	res.render('dashboard', {
+		title: 'Dashboard',
+		link: `/dashboard`,
+		navlist: nav
+	});
+};
+
+const wiki = (req, res) => {
+	res.render('wiki', {
+		title: 'req.params.name',
+		link: `/wiki/${req.params.name}`,
+		navlist: nav
+	});
+};
+
+const settings = (req, res) => {
+	res.render('settings', {
+		title: 'Settings',
+		link: `/settings`,
+		navlist: nav
+	});
+};
+
+module.exports = {
+	dashboard,
+	wiki,
+	settings
+};

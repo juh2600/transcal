@@ -1,0 +1,31 @@
+extends layout-with-nav
+
+append links
+    link(href="css/dashboard.css", rel="stylesheet", type="text/css")
+
+block content
+    ul(class="plain", id="dashboard-ctr")
+        each valL in [0, 1, 2]
+            li(class="plain dashboard-col-ctr")
+                ul(class="plain dashboard-col")
+                    each valR in [0, 1, 2]
+                        li(class="situation-tile")
+                            input(id="University-of-Nowhere-"+valL+"-"+valR, class="hidden", name="University-of-Nowhere", checked type="checkbox")
+                            label(for="University-of-Nowhere-"+valL+"-"+valR)
+                                div(class="situation-title") University of Nowhere
+                            ul(class="plain task-list")
+                                li(class="task")
+                                    input(id="University-of-Nowhere-"+valL+"-"+valR+"-student-id", class="hidden", name="University-of-Nowhere-student-id", type="checkbox")
+                                    label(for="University-of-Nowhere-"+valL+"-"+valR+"-student-id")
+                                        div(class="fake-checkbox")
+                                        div(class="task-title") Student ID
+                                li(class="task")
+                                    input(id="University-of-Nowhere-"+valL+"-"+valR+"-email", class="hidden", name="University-of-Nowhere-email", type="checkbox")
+                                    label(for="University-of-Nowhere-"+valL+"-"+valR+"-email")
+                                        div(class="fake-checkbox")
+                                        div(class="task-title") Email
+                                li(class="task")
+                                    input(id="University-of-Nowhere-"+valL+"-"+valR+"-the-system", class="hidden", name="University-of-Nowhere-the-system", type="checkbox")
+                                    label(for="University-of-Nowhere-"+valL+"-"+valR+"-the-system")
+                                        div(class="fake-checkbox")
+                                        div(class="task-title") The System
