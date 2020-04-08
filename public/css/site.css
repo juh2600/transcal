@@ -42,19 +42,27 @@ ol.plain, ul.plain {
 }
 
 main {
-    padding: 4.5em 0 0 0;
+    padding: 0 0 0 0;
+    position: fixed;
+    /* height should equal top of nav#main-nav */
+    top: 4.5rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow-x: hidden;
 }
 
 header#page-title {
-    padding: 1.5em 0 1em 0;
-    /* height should equal nav#main-nav > #nav-open-close */
-    height: 4.5em;
+    padding: 1.4em 0 1em 3.9rem; /* left is equal to width of hamburger butan, top just lines it up nicely with burger */
+    /* height should equal top of nav#main-nav */
+    height: 4.5rem;
     box-sizing: border-box;
     white-space: nowrap;
     position: fixed;
     top: 0;
-    left: 3.9em; /* equal to width of clickable hamborgar butan */
     right: 0;
+    left: 0;
+    border-bottom: 1px solid;
 }
 
 h1 {
@@ -76,6 +84,6 @@ input.hidden {
 
 @media all and (min-width: 26em) {
     main {
-        padding: 5.5em 2em 2em 5em;
+        padding: 1.5em 2em 2em 5em;
     }
 }
